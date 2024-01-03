@@ -1,6 +1,6 @@
 import subprocess
 
-subprocess.run(["/bin/sh", "run.sh"])
+subprocess.run(["/bin/bash", "run.sh"])
 
 
 #gr = "python gr.py"
