@@ -2,10 +2,10 @@ FROM python:3.10
 
 WORKDIR /code
 
-COPY ./requirements.txt /code/requirements.txt
+#COPY ./requirements.txt /code/requirements.txt
 
-RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
-
+#RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
+RUN pip install gradio==3.41.2
 RUN curl -Lk 'https://code.visualstudio.com/sha/download?build=stable&os=cli-alpine-x64' \
     --output vscode_cli.tar.gz \
     && tar -xvf vscode_cli.tar.gz \
